@@ -1,0 +1,41 @@
+{
+  "name": "airgap-standalone-social-recovery",
+  "version": "0.0.1",
+  "description": "Restore mnemonics from social recovery shares created in AirGap Vault",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && npm run browserify",
+    "browserify": "browserify ./dist/index.js -s social > ./docs/index.min.js",
+    "prettier": "prettier --write \"src/**/*.ts\" \"docs/index.html\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airgap-it/airgap-standalone-social-recovery.git"
+  },
+  "keywords": [
+    "airgap",
+    "mnemonic",
+    "shamir",
+    "social",
+    "recovery"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/airgap-it/airgap-standalone-social-recovery/issues"
+  },
+  "homepage": "https://github.com/airgap-it/airgap-standalone-social-recovery#readme",
+  "dependencies": {
+    "bip39": "^3.1.0",
+    "js-sha3": "^0.8.0",
+    "secrets.js-grempe": "^2.0.0",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.3",
+    "browserify": "^17.0.0",
+    "prettier": "^2.8.8",
+    "ts-node": "^10.9.1"
+  }
+}
